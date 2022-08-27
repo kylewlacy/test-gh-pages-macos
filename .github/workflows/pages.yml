@@ -35,8 +35,7 @@ jobs:
       - name: Upload artifact
         uses: kylewlacy/upload-pages-artifact@handle-weird-paths
         with:
-          # Upload entire repository
-          path: src
+          path: '"Source Dir"'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
